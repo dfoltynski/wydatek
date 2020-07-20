@@ -1,0 +1,70 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+svg {
+    position: absolute;
+    top: 5rem;
+    transform: translateX(-50%);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -50px;
+    position: absolute;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    text-align: center;
+    line-height: 3;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #000000;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    background-color: #ff3378;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: background 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    transition: background-color 0.2s ease-in-out;
+    background-color: #cf2961;
+}
+
+.loginContainer a {
+    display: inline-block;
+    background-color: #ff3378;
+    border: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+    color: #ffffff;
+    margin-top: 5.5em;
+    position: absolute;
+    padding: 5px;
+}
+
+.loginContainer a:hover {
+    transition: background-color 0.2s ease-in-out;
+    background-color: #cf2961;
+}

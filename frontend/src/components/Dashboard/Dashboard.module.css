@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.dashboardContainer {
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 50% 15% 15% 15% 15%;
+    grid-template-areas: "displayGraph" "balance" "income" "expenses";
+    justify-content: center;
+}
+
+.balanceGraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    grid-area: displayGraph;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.balance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    grid-area: balance;
+    background-color: #ffffff;
+}
+
+.income {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    grid-area: income;
+    background-color: #ffffff;
+}
+
+.expenses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    grid-area: expenses;
+    background-color: #ffffff;
+}
+
+.displayMoney {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+canvas {
+    max-width: 685px;
+    max-height: 344px;
+}

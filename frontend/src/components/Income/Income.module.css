@@ -1,0 +1,127 @@
+.incomeContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.incomeBox {
+    width: 90%;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.incomeField {
+    display: flex;
+    margin-top: 1rem;
+    height: auto;
+}
+
+.from {
+    float: left;
+    flex: 1;
+}
+
+.amount {
+    float: left;
+}
+
+.price {
+    flex: 1;
+    float: left;
+}
+
+.product {
+    flex: 1;
+    float: left;
+}
+
+.addIncomePrompt {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+}
+
+.addIncomePrompt form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    transform: translateX(0);
+    text-align: center;
+}
+
+.addIncomePrompt input[type="submit"] {
+    background-color: #3ded46;
+    font-size: 2rem;
+    transition: 0.2 ease-in-out;
+}
+
+.addIncomePrompt input[type="submit"]:hover {
+    transition: 0.2s ease-in-out;
+    background: #32c439;
+}
+
+.nextBtn {
+    margin-top: 2rem;
+    background-color: #ff3378;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: 0.2 ease-in-out;
+}
+
+.nextBtn:hover {
+    transition: 0.2s ease-in-out;
+    background-color: #cf2961;
+}
+
+.addBtn {
+    margin-right: 1rem;
+    background-color: #3ded46;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: background-color 0.2 ease-in-out;
+}
+
+.addBtn:hover {
+    transition: 0.2s ease-in-out;
+    background: #32c439;
+}
+
+@media screen and (min-width: 450px) {
+    .incomeField {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .incomeField {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .incomeField {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.navbarContainer {
+    position: absolute;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    z-index: 2;
+    transition: transform 0.3s 0.1s ease-in-out;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+}
+
+.hamburger__box {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger__inner {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    position: absolute;
+    transition: background-color 0.1s 0.2s ease-in-out;
+}
+
+.hamburger__inner::before,
+.hamburger__inner::after {
+    transition: transform 0.2s 0.2s ease-in-out,
+        background-color 0.2s 0.2s ease-in-out;
+
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    position: absolute;
+}
+
+.hamburger__inner::before {
+    top: 8px;
+}
+
+.hamburger__inner::after {
+    top: -8px;
+}
+
+.hamburger__activate {
+    z-index: 2;
+    background-color: transparent;
+    border: 0;
+}
+
+.hamburger__activate .hamburger__inner {
+    background-color: transparent;
+}
+
+.hamburger__activate .hamburger__inner::after {
+    background-color: #ffffff;
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger__activate .hamburger__inner::before {
+    background-color: #ffffff;
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff3378;
+    z-index: 1;
+    transform: translateX(-100vw);
+    transition: 0.2s ease-in-out;
+}
+
+.menu__activate {
+    transition: 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff3378;
+    z-index: 1;
+    transform: translateX(0);
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+
+.navbarContainer button,
+a {
+    background-color: transparent;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+}
